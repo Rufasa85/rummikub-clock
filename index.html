@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./scripts.js"></script>
+</head>
+<body>
+    <main>
+        <form action="">
+            <select name="players" id="player-count">
+                <option value="2">2 players</option>
+                <option value="3">3 players</option>
+                <option value="4">4 players</option>
+            </select>
+            <select name="time" id="time-value">
+                <option value="30">5 minutes</option>
+                <option value="600">10 minutes</option>
+                <option value="1200">20 minutes</option>
+            </select>
+            <button>start game</button>
+        </form>
+        <section id="timer" class="hidden">
+            <h1>player <span id="player-num">number</span> turn</h1>
+            <h2 id="countdown">Time remaining</h2>
+            <button id="end-turn">end turn</button>
+            <button id="end-game">end game</button>
+        </section>
+    </main>
+</body>
+</html>
